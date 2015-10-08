@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Whiskey</title>
+  <title>Laphroaig</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   
@@ -9,12 +9,12 @@
       <ul id="navlist">
         <li id="title">Etsy</li>
         <li id="topbox"><input type="search"></li>
-        <button>Search</button>
+        <button id="search">Search</button>
         <li><a href class="toplink">Sell on Etsy</a></li>
         <li><a href class="topreg">Register</a></li>
         <li><a href class="signin">Sign in</a></li>
         <img src="images/cart.png" id="img1" height="23" width="23">
-        <li id="carttext"><br>Cart</li>
+        <li id="carttext">Cart</li>
       </ul>
     
       <ul id="nav2">
@@ -33,26 +33,31 @@
 
        <br><br><br>
 <body>
-  <div class="container"></div>
+ <div class="container"> 
     
 
   <script type="text/template" id="itemTemplate">
-   
 
-    <div>
-      <p>
+    <div class="scotch">
+      <img src="<%= Images[0].url_170x135 %>">
+      <p class="title">
         <%= title %>
         </p>
-        <p class="price">
-        $<%= price %>
+        <p class="shopprice" id="shop">
+        <%= Shop.shop_name %>
+        
+        <p class="shopprice" id="price"
+        $<%= price %> <%= currency_code %>
         </p>
-        <p class="description">
-        <%= description %>
-        </p>
-        </div>
+    </div>
 
     <hr>
     </script>
+    </div>
+
+    
+
+
       
 
 

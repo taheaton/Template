@@ -7,7 +7,7 @@ border-bottom: 1px solid #d0d0d0;
 #navlist li
 {
 display: inline;
-padding-right: 20px;
+padding-right: 22px;
 
 }
 
@@ -16,29 +16,38 @@ padding-right: 20px;
   font-size: 30pt;
   font-family: times,sans-serif;
   margin-left: 83pt;
+  padding: 0pt;
+  border: 0pt;
 }
 
 input {
-  height: 20px;
-  padding-top: 10px;
+  height: 31px;
+  width: 250px;
+  padding-top: 0px;
   box-shadow: inset 0 1px 1px #E9E9E8,0 0 0 1000px #fbfbfa inset;
 }
 button {
+  display: inline;
   height: 35px;
-  padding-top: 12px;
+  width: 75px;
+  padding: 0px;
   background-color: #34A8C4;
   color: white;
-  margin-left: -26px;
+  text-align: center;
+  margin: 0pt;
+  margin-left: -25px;
+  border: 10px;
   border-width: 1px;
-  border-radius: 3px;
+  border-radius: 0px;
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+
 }
 .toplink {
   color: #34a8c4;
   text-decoration: none;
   margin-right: 0px;
-  margin-left: 355px;
+  margin-left: 259px;
 }
 .topreg {
   color: #34a8c4;
@@ -57,7 +66,7 @@ button {
 }
 #carttext {
   font-size: 12px;
-  margin-left: 1094px;
+  margin-left: 1102px;
   margin-right: 0pt;
   margin-top: 0pt;
   margin-bottom: 0pt;
@@ -78,8 +87,70 @@ padding: 7px;
 margin-left: 0pt;
 color: #838B8B;
 font-size: 11pt;
-
 }
+
+/* Main Object */
+.container {
+width: 1280px;
+height: 1290px;
+}
+
+.scotch {
+border: 1px solid grey;
+height: 221.656px;
+width: 222.984px;
+font-size: 9pt;
+}
+
+.container img {
+  border: 1px solid grey;
+  height: 176.656px;
+  width: 222.984px;
+}
+p {
+  
+}
+/* Footer Area*/
+.image-number:before{
+  content: "#";
+}
+.image-footer:before 
+{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 10px 10px 0 10px;
+border-color: #bfc4c9 transparent transparent transparent;
+content: "";
+position: absolute;
+right: -2px;
+bottom: 46px;
+}
+.image-footer{
+  border-bottom: 1px solid #dedede;
+  overflow: auto;
+  padding: 10px 0 10px 0;
+}
+
+.image-caption {
+  display: inline-block;
+  float: right;
+}
+.image-number {
+  float: left;
+  margin-top: 7px;
+}
+/*Author's Area*/
+.authors img {
+  width: 25px;
+}
+.authors{
+  display: inline-block;
+  vertical-align: middle
+}
+
+
+
 
 
 
