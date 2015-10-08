@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BOOTS</title>
+  <title>Whiskey</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  
+    <div id="navcontainer">
+      <ul id="navlist">
+        <li id="title">Etsy</li>
+        <li id="topbox"><input type="search"></li>
+        <button>Search</button>
+        <li><a href class="toplink">Sell on Etsy</a></li>
+        <li><a href class="topreg">Register</a></li>
+        <li><a href class="signin">Sign in</a></li>
+      </ul>
+    </div>
+
 </head>
 <body>
+  <div class="container"></div>
+    
 
-  <h1>Hello World</h1>
+  <script type="text/template" id="itemTemplate">
+   
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/underscore/underscore.js"></script>
+    <div>
+      <p>
+        <%= title %>
+        </p>
+        <p class="price">
+        $<%= price %>
+        </p>
+        <p class="description">
+        <%= description %>
+        </p>
+        </div>
+
+    <hr>
+    </script>
+      
+
+
+
+  <script src ="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore.js">
+    </script>
+  <script src="js/etsy.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

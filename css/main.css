@@ -1,0 +1,55 @@
+#navcontainer {
+width: 100%;
+height: 64px;
+border-bottom: 1px solid #d0d0d0;
+
+}
+#navlist li
+{
+display: inline;
+padding-right: 20px;
+
+}
+
+#title {
+  color: #f45800;
+  font-size: 30pt;
+  font-family: times,sans-serif;
+  margin-left: 83pt;
+}
+
+input {
+  height: 20px;
+  padding-top: 10px;
+  box-shadow: inset 0 1px 1px #E9E9E8,0 0 0 1000px #fbfbfa inset;
+}
+button {
+  height: 36px;
+  padding-top: 11px;
+  background-color: #34A8C4;
+  color: white;
+  margin-left: -25px;
+}
+.toplink {
+  color: #34a8c4;
+  text-decoration: none;
+  margin-right: 0px;
+  margin-left: 355px;
+}
+.topreg {
+  color: #34a8c4;
+  text-decoration: none;
+}
+.signin {
+  color: #34a8c4;
+  text-decoration: none;
+  border: 1px solid #34a8c4;
+  padding: 10px;
+}
+
+
+
+
+
+
+
