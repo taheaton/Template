@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Laphroaig</title>
+  <title>Panerai</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
   
-    <div id="navcontainer">
+    <div class="navcontainer">
       <ul id="navlist">
         <li id="title">Etsy</li>
         <li id="topbox"><input type="search"></li>
@@ -18,47 +20,129 @@
       </ul>
     
       <ul id="nav2">
-        <li id="categories">Clothing & Accessories</li>
-        <li id="categories">Jewelry</li>
-        <li id="categories">Craft Supplies and Tools</li>
-        <li id="categories">Weddings</li>
-        <li id="categories">Entertainment</li>
-        <li id="categories">Home & Living</li>
-        <li id="categories">Kids & Baby</li>
-        <li id="categories">Vintage</li>
+      <li><a href="#">Clothing & Accessories</a></li>
+      <li><a href="#">Jewelry</a></li>
+      <li><a href="#">Craft Supplies & Tools</a></li>
+      <li><a href="#">Weddings</a></li>
+      <li><a href="#">Entertainment</a></li>
+      <li><a href="#">Home & Living</a></li>
+      <li><a href="#">Kids & Baby</a></li>
+      <li><a href="#">Vintage</a></li>
       </ul>
     </div>
-   </head>   
+     
 
 
-       <br><br><br>
-<body>
- <div class="container"> 
+       
+<div class="container">
+  
+<menu>
+  <h1>Show results for:</h1>
+  <ul>
+      <p>All Categories</p>
+      <li><a href="https://www.etsy.com/search/jewelry?q=panerai"> Jewelry</a></li>
+      <li><a href="https://www.etsy.com/search/accessories?q=panerai">Accessories</a></li>
+      <li><a href="https://www.etsy.com/search/craft-supplies-and-tools?q=panerai">Craft Supplies & Tools</a></li>
+      <li><a href="https://www.etsy.com/search/bags-and-purses?q=panerai">Bags & Purses</a></li>
+      <li><a href="https://www.etsy.com/search/art-and-collectibles?q=panerai">Art & Collectibles</a></li>
+      <li><a href="https://www.etsy.com/search/home-and-living?q=panerai">Home & Living</a></li>
+      <li><a href="https://www.etsy.com/search/books-movies-and-music?q=panerai">Books, Movies & Music</a></li>
+    </ul>
+<h1>Refine Your Search</h1>
+    <ul class="menu2">
+      <li>Item Type</li>
+        <li><input class="checkbubble" type="radio"><a href="#">All Items</a></li>
+        <li><input class="checkbubble" type="radio"><a href="#">Handmade</a></li>
+        <li><input class="checkbubble" type="radio"><a href="#">Vintage</a></li>
+      <li><hr></li>
+      <li>Price</li>
+      <div class="searchPrice">
+        <div>$<input type="search" placeholder="Low"></div> to
+        <div>$<input type="search" placeholder="High"></div>
+        <button class="priceUpdate"></button>
+      </div>
+      <li><hr></li>
+      <li>Filter by Color</li>
+      <li><div class="color1"></div>
+          <div class="color2"></div>
+          <div class="color3"></div>
+          <div class="color4"></div>
+          <div class="color5"></div>
+          <div class="color6"></div>
+          <div class="color7"></div>
+          <div class="color8"></div></li>
+      <li><hr></li>
+      <li>Ordering Options</li>
+        <li><input class="checkbox" type="checkbox"><a href="#">Accepts Etsy Gift Cards</a></li>
+        <li><input class="checkbox" type="checkbox"><a href="#">Customizable</a></li>
+      <li><hr></li>
+      <li>Shop Location</li>
+        <li><input class="checkbubble" type="radio"><a href="#">Accepts Etsy Gift Cards</a></li>
+        <li><input class="checkbubble" type="radio"><a href="#">Customizable</a></li>
+      <li>Choose a custom location</li>
+      <li><hr></li>
+      <li>Ship To</li>
+        <li><select class="countrymenu">
+              <option>United States</option>
+              <option>Everywhere Else</option>          
+            </select></li>
+    </ul>
+  </sidebar><ul>
+      <p>Item Type</p>
+      <li>All Items</li>
+      <li>Handmade</li>
+      <li>Vintage
+        <hr>
+        </li>
+      <li class="cat">1</li>
+      <li class="cat">1</li>
+      <li class="cat">1</li>
+      <li class="cat">1</li>
+      <li class="cat">1</li>
+    </ul>
+
+    </menu>
+
+
+
+
+    <!--<p class="snippets"><span class="snip1">Show results for:</span><span class="snip2">All Categories</span><span class="snip1">> "panerai" </span><span class="snip3">(875 Results)</span><span class="snip4">Sort by: </span><span class="snip5">Relevancy</span></p>-->
+  
+  
+
     
+ 
+<div class="boxes">
+    <ul class="panheading">
+        <li class="cat">All Categories > "Panerai" (2487 Results)</li>
+        <li class="sort">Sort by: <select class="sortmenu">
+              <option>Relevancy</option>
+              <option>Price</option>        
+            </select></li>
+
 
   <script type="text/template" id="itemTemplate">
+    <div class="panerai">
 
-    <div class="scotch">
       <img src="<%= Images[0].url_170x135 %>">
-      <p class="title">
-        <%= title %>
-        </p>
-        <p class="shopprice" id="shop">
-        <%= Shop.shop_name %>
-        
-        <p class="shopprice" id="price"
-        $<%= price %> <%= currency_code %>
-        </p>
-    </div>
-
-    <hr>
-    </script>
-    </div>
-
-    
-
-
       
+        <a class = "titlelinks">
+          <a href ="<%= url %>"><%= title %>
+          </a>
+
+        <a class="shop">
+          <a href = "<%= Shop.url %>"<%= Shop.shop_name %>
+          </a>
+        
+        <p class="price"
+          $<%= price %> <%= currency_code %>
+          </p>
+
+        <div>
+            <img id="heart" class="heartHidden" src="images/heart.png">
+            <img id="hamburger" class="hamburgerHidden" src="images/hamburger.png">
+          </div>
+          </script>
 
 
 
