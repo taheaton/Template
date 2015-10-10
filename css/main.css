@@ -148,6 +148,7 @@ h1 {
 menu {
   margin: 4pt;
   width: 25%;
+  height: 2000px;
   float: left;
   padding-left: 0; }
 
@@ -213,7 +214,7 @@ menu ul li a {
     .panerai img {
       width: 225px;
       }
-    .panerai a.title {
+    .panerai .title {
       margin-top: 2px;
       margin-left: 3px;
       margin-right: 0px;
@@ -221,19 +222,10 @@ menu ul li a {
       font-size: 0.7em;
       white-space: nowrap;
       overflow: hidden;
-      text-overflow: ellipsis; }
-      }
-
-    .panerai .title {
-      margin-top: 2px;
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-bottom: 0px;
-      font-size: 0.7em;
-      white-space: nowrap;
-      overflow: hidden;
+      text-overflow: ellipsis;
        }
-    .panerai .shop {
+      
+    .panerai .shop{
       margin-top: 5px;
       margin-left: 5px;
       float: left;
@@ -241,7 +233,7 @@ menu ul li a {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      color: #ACAAAC; }
+      color: #ACAAAC;} 
     .panerai .price {
       color: #8CC015;
       margin-top: 5px;
@@ -251,7 +243,6 @@ menu ul li a {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis; }
-
 
 
   

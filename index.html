@@ -112,24 +112,17 @@
       <div class="panerai">
 
 
-        <img src="<%= Images[0].url_170x135 %>">
-      
-        <a class = "titlelinks">
+        <img src="<%= Images[0].url_170x135 %>"></img>
+        <div class="title">
           <a href ="<%= url %>"><%= title %>
-          </a>
+          </a></div>
 
-        <a class="shop">
-          <a href = "<%= Shop.url %>"<%= Shop.shop_name %>
-          </a>
-        
-        <p class="price"
-          $<%= price %> <%= currency_code %>
+        <p class="shop">
+          <a href ="<%= Shop.url %>"><%= Shop.shop_name %></a></p>
+          <p class="price">$<%= price %> <%= currency_code %>
           </p>
 
-        <div>
-            <img id="heart" class="heartHidden" src="images/heart.png">
-            <img id="hamburger" class="hamburgerHidden" src="images/hamburger.png">
-        </div>   
+          
       </div>
       
 
