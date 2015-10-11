@@ -32,13 +32,13 @@ padding-left: 12pt;
   border: 0pt;
 }
 
-input {
+#topbox input{
   height: 31px;
   width: 250px;
   padding-top: 0px;
   box-shadow: inset 0 1px 1px #E9E9E8,0 0 0 1000px #fbfbfa inset;
   padding-left: 7pt;}
-button {
+#search {
   display: inline;
   height: 35px;
   width: 75px;
@@ -174,8 +174,8 @@ menu ul li a {
       margin-top: 15px;
       margin-bottom: 15px; }
     menu ul div {
-      width: 18px;
-      height: 18px;
+      width: 72px;
+      height: 38px;
       border: 1px solid lightgrey;
       border-radius: 2px;
       display: inline-block; }
