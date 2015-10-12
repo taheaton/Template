@@ -196,7 +196,8 @@ menu ul li a {
     menu ul .color8 {
       background-color: #FFFFFF; }
   menu .searchPrice {
-    width: 50px; }
+    width: 50px;
+    display: inline-block; }
   menu hr {
     width: 150px;
     text-align: center; }
